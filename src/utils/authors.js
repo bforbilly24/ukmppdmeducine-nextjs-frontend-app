@@ -4,9 +4,9 @@ const authors = {
 	version: '1.0.0',
 	versionCode: '100',
 	author: {
-		name: 'UKMPPD Meducine',
-		email: 'admin@meducine.id',
-		url: 'https://www.circleit.dev/',
+		name: 'Halim Putra',
+		email: 'halimputra0701@icloud.com',
+		url: 'https://bforbilly.me',
 	},
 };
 
