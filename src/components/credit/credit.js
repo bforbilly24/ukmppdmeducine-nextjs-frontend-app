@@ -6,7 +6,7 @@ import { authors } from '@/utils/authors';
 function Credit() {
 	useEffect(() => {
 		if (typeof window !== undefined) {
-			window.cit = authors;
+			window.bforbilly24 = authors;
 		}
 	}, []);
 }
