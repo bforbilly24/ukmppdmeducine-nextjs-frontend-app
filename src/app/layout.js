@@ -3,6 +3,10 @@ import { Poppins as Font } from 'next/font/google';
 import { Credit } from '@/components/credit/credit';
 import { ProgressBarProvider } from '@/components/providers/progress-bar-provider';
 import { ThemeProvider } from 'next-themes';
+import { Navbar } from '@/components/navigation/navbar';
+import { SplashScreen } from '@/components/splah/splash-screen';
+import { Header } from '@/components/navigation/header';
+import { Footer } from '@/components/footer/footer';
 
 const font = Font({
 	subsets: ['latin'],
@@ -28,15 +32,19 @@ export const viewport = {
 export default async function RootLayout({ children }) {
 	return (
 		<html lang='id' suppressHydrationWarning={true} className='scroll-smooth'>
-			<body className={font.className}>
-				<ThemeProvider attribute='class'>
-					<ProgressBarProvider>
-						<main className='h-full flex flex-col'>
+			<body className={`${font.className}`}>
+				<main>
+					<ThemeProvider attribute='class'>
+						<ProgressBarProvider>
+                            <SplashScreen />
+                            <Header />
+                            <Navbar />
 							{children}
+							<Footer />
 							<Credit />
-						</main>
-					</ProgressBarProvider>
-				</ThemeProvider>
+						</ProgressBarProvider>
+					</ThemeProvider>
+				</main>
 			</body>
 		</html>
 	);
