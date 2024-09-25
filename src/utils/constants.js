@@ -1,8 +1,8 @@
 const staticNavMenuItems = [
-	{ id: '1', name: 'Home', slug: '/#home' },
-	{ id: '2', name: 'About Us', slug: '/#about-us' },
-	{ id: '3', name: 'Service', slug: '/#service' },
-	{ id: '4', name: 'Portfolio', slug: '/#portfolio' },
+	{ id: '1', name: 'Home', slug: '/' },
+	{ id: '2', name: 'Programs', slug: '/programs' },
+	{ id: '3', name: 'Tentang Kami', slug: '/tentang-kami' },
+	{ id: '4', name: 'Kontak', slug: '/kontak' },
 ];
 
 const PROTECTED_PAGES = ['/', '/programs'];
