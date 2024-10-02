@@ -57,10 +57,19 @@ module.exports = {
 					950: '#092d48',
 				},
 				textColor: {
-					500: '#6E6E6E',
+					gray: {
+						400: '#979797',
+						500: '#6E6E6E',
+					},
+					black: {
+						400: '#262F2E',
+						500: '#181818',
+					},
 				},
 				body: {
-					500: '#181818',
+					black: {
+						500: '#181818',
+					},
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
@@ -87,12 +96,31 @@ module.exports = {
 					4: 'hsl(var(--chart-4))',
 					5: 'hsl(var(--chart-5))',
 				},
+                gradientBlue: 'linear-gradient(to right, #2492FF, #045C94)',
 			},
 			backgroundImage: {
 				gradientBlue: 'linear-gradient(92deg, #2492FF 3.59%, #045C94 96.74%)',
 			},
 			boxShadow: {
+				buttonHeroShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
+				cardHeroShadow: '22px -40px 40px 0px rgba(0, 0, 0, 0.04)',
 				navbarShadow: '0px 10px 25px 0px rgba(0, 0, 0, 0.05)',
+				notificationShadow: '0 25px 50px -12px rgba(36, 146, 255, 0.2)',
+				BannerShadow: '0 58px 47.8px 0 rgba(36, 146, 255, 0.28)',
+				bannerPartnerShadow: '0 10px 25px 0 rgba(0, 0, 0, 0.05)',
+				stepButtonShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
+			},
+			keyframes: {
+				runningStep: {
+					'0%': { width: '0%' },
+					'100%': { width: '100%' },
+				},
+			},
+			animation: {
+				runningStep: 'runningStep 1.5s ease-in-out forwards',
+				runningStepDelay1: 'runningStep 1.5s ease-in-out 0s forwards', // Starts immediately
+				runningStepDelay2: 'runningStep 1.5s ease-in-out 1.5s forwards', // Starts after step 1 completes
+				runningStepDelay3: 'runningStep 1.5s ease-in-out 3s forwards', // Starts after step 2 completes
 			},
 		},
 	},
