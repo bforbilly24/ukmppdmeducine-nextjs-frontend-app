@@ -106,9 +106,14 @@ module.exports = {
 				cardHeroShadow: '22px -40px 40px 0px rgba(0, 0, 0, 0.04)',
 				navbarShadow: '0px 10px 25px 0px rgba(0, 0, 0, 0.05)',
 				notificationShadow: '0 25px 50px -12px rgba(36, 146, 255, 0.2)',
-				BannerShadow: '0 58px 47.8px 0 rgba(36, 146, 255, 0.28)',
+				bannerShadow: '0 58px 47.8px 0 rgba(36, 146, 255, 0.28)',
 				bannerPartnerShadow: '0 10px 25px 0 rgba(0, 0, 0, 0.05)',
 				stepButtonShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
+                downloaButtonShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
+                programButtonShadow: '0 10px 20px rgba(0, 0, 0, 0.05)',
+                programButtonShadow: '0 10px 20px rgba(100, 100, 100, 0.05)',
+                darkProgramButtonShadow: '0 10px 20px rgba(255, 255, 255, 0.05)',
+
 			},
 			keyframes: {
 				runningStep: {
@@ -118,9 +123,9 @@ module.exports = {
 			},
 			animation: {
 				runningStep: 'runningStep 1.5s ease-in-out forwards',
-				runningStepDelay1: 'runningStep 1.5s ease-in-out 0s forwards', // Starts immediately
-				runningStepDelay2: 'runningStep 1.5s ease-in-out 1.5s forwards', // Starts after step 1 completes
-				runningStepDelay3: 'runningStep 1.5s ease-in-out 3s forwards', // Starts after step 2 completes
+				runningStepDelay1: 'runningStep 1.5s ease-in-out 0s forwards', 
+				runningStepDelay2: 'runningStep 1.5s ease-in-out 1.5s forwards',
+				runningStepDelay3: 'runningStep 1.5s ease-in-out 3s forwards', 
 			},
 		},
 	},
