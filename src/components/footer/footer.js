@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 function Footer() {
 	return (
-		<footer id='footer' className={'bg-body-500 px-[3.125rem] pt-[6.25rem] dark:bg-gray-950'}>
-			<div className='container mx-auto flex h-fit w-full items-center justify-center pb-[1.875rem]'>
+		<footer id='footer' className={'bg-body-black-500 pt-[6.25rem] dark:bg-gray-950'}>
+			<div className='container mx-auto flex h-fit w-full items-center justify-center pb-[1.875rem] px-[3.125rem]'>
 				<div className='flex w-full flex-col gap-y-[3.75rem]'>
 					<div className='grid grid-cols-3'>
 						<div className='flex flex-col items-start justify-center gap-y-5 pr-[6.25rem]'>
@@ -16,19 +16,19 @@ function Footer() {
 							<p className='text-xl leading-[1.625rem] text-white'>Information</p>
 							<ul className='space-y-2'>
 								<li className='flex transform items-center gap-2 transition-transform hover:translate-x-1 hover:scale-105 group'>
-									<span className="before:mr-2 before:text-secondary-500 before:content-['▶']" />
+									<span className="before:mr-2 before:text-primary-500 before:content-['▶'] group-hover:before:text-primary-50" />
 									<Link href='/tentang-kami' className='text-[1.063rem] text-white/80 transition group-hover:text-white/90'>
 										Tentang Kami
 									</Link>
 								</li>
 								<li className='flex transform items-center gap-2 transition-transform hover:translate-x-1 hover:scale-105 group'>
-									<span className="before:mr-2 before:text-secondary-500 before:content-['▶']" />
+									<span className="before:mr-2 before:text-primary-500 before:content-['▶'] group-hover:before:text-primary-50" />
 									<Link href='/programs' className='text-[1.063rem] text-white/80 transition group-hover:text-white/90'>
 										Programs
 									</Link>
 								</li>
 								<li className='flex transform items-center gap-2 transition-transform hover:translate-x-1 hover:scale-105 group'>
-									<span className="before:mr-2 before:text-secondary-500 before:content-['▶']" />
+									<span className="before:mr-2 before:text-primary-500 before:content-['▶'] group-hover:before:text-primary-50" />
 									<Link href='/kontak' className='text-[1.063rem] text-white/80 transition group-hover:text-white/90'>
 										Kontak
 									</Link>
