@@ -42,8 +42,8 @@ const RegistrationStepSection = () => {
                 />
             </div>
             <div className="flex flex-col gap-y-[0.625rem] px-2">
-                <p className="text-center text-base font-bold text-textColor-black-500">{step.name}</p>
-                <p className="text-center text-[1.063rem] leading-7 text-textColor-gray-500">
+                <p className="text-center text-base font-bold text-textColor-black-500 dark:text-gray-200">{step.name}</p>
+                <p className="text-center text-[1.063rem] leading-7 text-textColor-gray-500 dark:text-gray-200">
                     {step.id === '01' ? (
                         <>
                             Klik tombol Whatsapp, atau bisa klik{' '}
