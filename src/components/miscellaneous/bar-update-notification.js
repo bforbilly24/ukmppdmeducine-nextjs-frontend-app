@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { Section } from '@/components/sections/section';
-import Image from 'next/image';
 import { ArrowUpRightFromSquareIcon } from '@/components/svgs/arrow-up-right-from-square-icon';
 import { WrenchIcon } from '@/components/svgs/wrench-icon';
 
@@ -16,8 +15,7 @@ function BarUpdateNotification() {
 	if (!isVisible) return null;
 
 	return (
-		<Section id={'bar-update-notification'} className={'fixed bottom-4 left-1/2 z-20 w-full -translate-x-1/2 transform bg-transparent'}>
-			<div className='container mx-auto px-[3.125rem]'>
+		<Section id={'bar-update-notification'} className={'w-full'}>
 				<div className='flex w-full items-center justify-between rounded-sm bg-primary-500/60 px-4 py-3 backdrop-blur-md shadow-navbarShadow'>
 					<div className='flex w-fit gap-x-4'>
 						<div className='flex h-8 w-8 items-center justify-center rounded-sm bg-white/10'>
@@ -40,7 +38,6 @@ function BarUpdateNotification() {
 						</button>
 					</div>
 				</div>
-			</div>
 		</Section>
 	);
 }
