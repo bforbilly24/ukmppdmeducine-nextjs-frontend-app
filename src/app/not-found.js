@@ -12,7 +12,7 @@ export default function RootNotFound() {
 	return (
 		<Section id={'not-found'} className={'relative h-full w-full bg-white dark:bg-gray-950'}>
 			<Image src='/svgs/backgrounds/background-gradient-blue.svg' alt='background-gradient-blue' fill className='absolute inset-0 z-0 h-full w-full object-cover' />
-				<div className='container relative mx-auto flex h-[56.375rem] w-full items-center justify-center px-[3.125rem] pt-[15.75rem] pb-[6.25rem]'>
+			<div className='container relative mx-auto flex h-[56.375rem] w-full items-center justify-center px-[3.125rem] pb-[6.25rem] pt-[15.75rem]'>
 				<div className='flex flex-col items-center justify-center'>
 					<div className='flex flex-col items-center justify-center gap-6'>
 						<NotFoundThumbnail />
