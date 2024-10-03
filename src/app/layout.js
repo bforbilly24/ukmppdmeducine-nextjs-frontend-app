@@ -7,8 +7,6 @@ import { Navbar } from '@/components/navigation/navbar';
 import { SplashScreen } from '@/components/splah/splash-screen';
 import { Header } from '@/components/navigation/header';
 import { Footer } from '@/components/footer/footer';
-import BarUpdateNotification from '@/components/miscellaneous/bar-update-notification';
-import { Test } from '@/components/navigation/test';
 import WhatsappFloating from '@/components/miscellaneous/whatsapp-floating';
 
 const font = Font({
@@ -39,12 +37,10 @@ export default async function RootLayout({ children }) {
 				<main>
 					<ThemeProvider attribute='class'>
 						<ProgressBarProvider>
-                            {/* <SplashScreen /> */}
+                            <SplashScreen />
                             <Header />
                             <Navbar />
-                            {/* <Test /> */}
 							{children}
-                            <BarUpdateNotification />
                             <WhatsappFloating />
 							<Footer />
 							<Credit />
