@@ -113,7 +113,7 @@ module.exports = {
                 programButtonShadow: '0 10px 20px rgba(0, 0, 0, 0.05)',
                 programButtonShadow: '0 10px 20px rgba(100, 100, 100, 0.05)',
                 darkProgramButtonShadow: '0 10px 20px rgba(255, 255, 255, 0.05)',
-
+                formNewslatterShadow: '0 9px 40px rgba(0, 0, 0, 0.12)',
 			},
 			keyframes: {
 				runningStep: {
