@@ -78,10 +78,9 @@ export default function HomePage() {
 			<Section id={'banner-partner'} className={'relative h-full w-full bg-white dark:bg-gray-950'}>
 				<div className='container relative mx-auto flex h-fit w-full items-center justify-center'>
 					<Image src='/images/backgrounds/home/banner-hero-background.png' alt='banner-home-background' fill className='absolute inset-0 z-0 object-cover' />
-					<div className='shadow-bannerShadow relative flex h-[16.125rem] w-full items-center justify-center bg-primary-500/80'>
+					<div className='relative flex h-[16.125rem] w-full items-center justify-center bg-primary-500/80 shadow-bannerShadow'>
 						<Image src='/svgs/backgrounds/background-gradient-blue.svg' alt='background-gradient-blue' fill className='absolute inset-0 z-0 h-full w-full object-cover' />
 					</div>
-					<Image src='/svgs/backgrounds/background-gradient-blue.svg' alt='background-gradient-blue' fill className='absolute inset-0 z-0 h-full w-full object-cover' />
 
 					<div className='absolute top-[7.25rem] z-10 flex w-[83.75rem] items-center justify-center rounded-[0.313rem] bg-white/80 shadow-bannerPartnerShadow backdrop-blur-[1.25rem]'>
 						<div className='flex flex-col gap-y-[3.125rem] px-[3.125rem] py-[3.125rem]'>
@@ -97,7 +96,7 @@ export default function HomePage() {
 				<Image src='/svgs/backgrounds/hexagonal-banner-background.svg' alt='hexagonal-banner-background' width={688} height={688} className='absolute -right-[21.5rem] -top-[13.438rem]' />
 			</Section>
 
-			<Section id={'step-register'} className={'relative w-full bg-white dark:bg-gray-950 h-[53.813rem]'}>
+			<Section id={'step-register'} className={'relative h-[53.813rem] w-full bg-white dark:bg-gray-950'}>
 				<Image src='/svgs/backgrounds/step-background-gradient-blue.svg' alt='step-background-gradient-blue' fill className='absolute inset-0 z-0 h-full w-full object-cover' />
 				<Image src='/svgs/backgrounds/step-main-background-gradient-blue.svg' alt='step-main-background-gradient-blue' fill className='absolute inset-0 z-0 h-full w-full object-cover' />
 				{/* <div className='absolute left-[21.875rem] top-[10rem] h-[2.188rem] w-[2.188rem] rounded-full bg-secondary-300/25' />
@@ -124,7 +123,7 @@ export default function HomePage() {
 
 			<Section id={'our-program'} className={'relative h-full w-full bg-white dark:bg-gray-950'}>
 				<Image src='/svgs/backgrounds/program-background-gradient-blue.svg' alt='program-background-gradient-blue' fill className='absolute inset-0 z-0 h-full w-full object-cover' />
-				<div className='container relative mx-auto h-fit w-full flex-col px-[3.125rem]'>
+				<div className='container relative mx-auto flex h-fit w-full flex-col px-[3.125rem]'>
 					<div className='flex flex-col items-center justify-center gap-y-10'>
 						<div className='flex flex-col items-center justify-center gap-y-5'>
 							<div className='flex flex-col items-center justify-center gap-y-2'>
@@ -139,6 +138,58 @@ export default function HomePage() {
 						</div>
 
 						<ProgramSection programLists={programLists} />
+					</div>
+				</div>
+			</Section>
+
+			<Section id={'banner-registration'} className={'relative h-full w-full bg-white dark:bg-gray-950'}>
+				<Image src='/svgs/backgrounds/banner-registration-background-gradient-blue.svg' alt='banner-registration-background-gradient-blue' fill className='absolute inset-0 z-0 h-full w-full object-cover' />
+
+				<div className='absolute right-[22rem] top-[4.5rem] h-5 w-5 rounded-full bg-primary-500' />
+				<div className='absolute left-[22.5rem] top-[4.5rem] h-5 w-5 rounded-full bg-primary-500/50' />
+				<div className='absolute left-[25rem] top-[2.875rem] h-[2.188rem] w-[2.188rem] rounded-full bg-primary-400/25' />
+
+				<div className='container relative mx-auto flex h-fit w-full px-[3.125rem] py-[6.25rem]'>
+					<div className='relative flex w-full flex-row items-center justify-center gap-x-20 rounded-2xl bg-gradient-to-tl from-secondary-700 to-primary-500 px-[6.25rem] py-8'>
+						<Image src='/svgs/banners/union-banner.svg' alt='union-banner' width={220} height={101} className='absolute bottom-1 right-[6.25rem]' />
+
+						<div className='h-fit w-fit'>
+							<Image src='/svgs/banners/hero-banner.svg' alt='hero-banner' width={306} height={302} />
+						</div>
+
+						<div className='flex flex-col gap-y-5'>
+							<div className='flex flex-col gap-y-4'>
+								<h4 className='text-[2.75rem] font-semibold capitalize text-white'>Daftar Jadi Member Sekarang</h4>
+								<p className='text-base font-normal capitalize text-white'>Ribuan dokter telah Meducine bantu mencapai mimpinya. Gabung Komunitas Group Dokter terbesar di Indonesia.</p>
+							</div>
+							<Link href='https://api.whatsapp.com/send?phone=6281931633594&text=Halo%21%20saya%20ada%20masalah%20dengan%20meducine%2C%20mohon%20dibantu' passHref>
+								<button className='flex h-fit w-fit items-center justify-center gap-x-3 rounded-[0.313rem] bg-white px-[2.188rem] py-[1rem]'>
+									<WhatsappIcon className={'fill-primary-500'} />
+									<p className='text-[0.938rem] font-medium leading-[1.219rem] text-primary-500'>Daftar</p>
+								</button>
+							</Link>
+						</div>
+					</div>
+				</div>
+			</Section>
+
+			<Section id={'newslatter'} className={'relative h-full w-full bg-white dark:bg-gray-950'}>
+				<Image src='/svgs/backgrounds/newslatter-background-gradient-blue.svg' alt='newslatter-background-gradient-blue' fill className='absolute inset-0 z-0 h-full w-full object-cover' />
+				<div className='absolute left-[24.563rem] top-[3.875rem] h-[2.188rem] w-[2.188rem] rounded-full bg-[#5CB8E4]/25' />
+				<div className='absolute right-[22.063rem] top-[2.625rem] h-5 w-5 rounded-full bg-primary-500' />
+				<div className='container relative mx-auto flex h-fit w-full px-[3.125rem] py-[6.25rem]'>
+					<div className='flex w-full flex-col items-center justify-center gap-y-[2.188rem]'>
+						<div className='flex flex-col gap-y-5'>
+							<p className='text-center font-medium uppercase tracking-[0.156rem] text-primary-500'>Berlangganan Newslatter Kami</p>
+							<h4 className='text-center text-[2.188rem] font-semibold capitalize leading-[2.844rem] text-textColor-black-500'>Dapatkan Pembaruan Terbaru</h4>
+						</div>
+						<div className='flex w-fit gap-x-5'>
+							<form className='shadow-formNewslatterShadow flex h-[3.188rem] w-[27.125rem] items-center rounded-[0.313rem] border border-white/25 bg-white px-[0.813rem] py-[0.938rem]'>
+								<input type='email' placeholder='Enter your email' className='flex-grow bg-transparent text-black placeholder-gray-500 outline-none placeholder:text-[0.938rem] placeholder:font-normal placeholder:text-[#6E6E6E]/60' required />
+							</form>
+
+							<button className='to rounded-[0.313rem] bg-gradient-to-t from-primary-500 to-secondary-700 px-[2.188rem] py-[0.625rem] capitalize text-white hover:bg-gradient-to-t hover:from-primary-300 hover:to-secondary-500'>Subscribe</button>
+						</div>
 					</div>
 				</div>
 			</Section>
